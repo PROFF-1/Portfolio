@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import profile from "../../../public/richmondnyamedor.png";
+import profile from "../../public/richmondnyamedor.png";
 
 export const HeroSection = () => {
   return (
