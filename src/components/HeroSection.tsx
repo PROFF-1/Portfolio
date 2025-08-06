@@ -12,19 +12,27 @@ export const HeroSection = () => {
           {/* Terminal-style header */}
           <Card className="inline-block p-3 md:p-4 border-glow bg-darker-bg/90 fade-in-scale">
             <p className="text-xs md:text-sm text-muted-foreground font-mono">
-              <span className="text-primary">user@portfolio:~$</span> whoami
+              <span className="text-primary">Enter_</span>
             </p>
           </Card>
           
           {/* Main heading */}
           <div className="space-y-2 md:space-y-4">
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-glow-strong leading-tight">
-              <span className="text-primary slide-in-left block" style={{ animationDelay: '0.2s' }}>RICHMOND</span>
-              <span className="text-secondary slide-in-right block" style={{ animationDelay: '0.4s' }}>NYAMEDOR</span>
+              <span className="text-primary slide-in-left block" style={{ animationDelay: '0.2s' }}>RICHMOND <span className="text-secondary slide-in-right inline" style={{ animationDelay: '0.4s' }}>NYAMEDOR</span></span>
+              
             </h1>
-            
+            <div className="mx-auto w-48 h-48 rounded-full border-4 border-glow overflow-hidden flex items-start justify-center bg-gray-900">
+              <img
+                src="public/richmond_nyamedor.jpeg"
+                alt="Richmond Nyamedor"
+                className="w-full h-64 object-cover object-top"
+                style={{ marginTop: '-24px' }}
+              />
+            </div>
+
             <div className="text-lg sm:text-xl md:text-2xl font-mono slide-in-up" style={{ animationDelay: '0.6s' }}>
-              <span className="text-accent">&gt;</span> Frontend Developer
+              <span className="text-accent">&gt;</span> Frontend Developer (Mobile and web)
               <span className="terminal-cursor"></span>
             </div>
           </div>
