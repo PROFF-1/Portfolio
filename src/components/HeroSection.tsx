@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import React from "react";
+import profile from "public/richmondnyamedor.png";
 
 export const HeroSection = () => {
   return (
@@ -24,7 +26,7 @@ export const HeroSection = () => {
             </h1>
             <div className="mx-auto w-48 h-48 rounded-full border-4 border-glow overflow-hidden flex items-start justify-center bg-gray-900">
               <img
-                src="public/richmond_nyamedor.jpeg"
+                src={profile}
                 alt="Richmond Nyamedor"
                 className="w-full h-64 object-cover object-top"
                 style={{ marginTop: '-24px' }}
