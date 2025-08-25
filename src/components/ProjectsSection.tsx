@@ -1,29 +1,17 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { link } from "fs";
 
 const projects = [
   {
-    title: "E-Commerce Mobile App",
-    description: "React Native app with Expo, featuring real-time inventory, payment integration, and sleek animations.",
-    tech: ["React Native", "Expo", "TypeScript", "API Integration"],
-    type: "Mobile",
-    status: "DEPLOYED"
+    title: "A Car And RealEstate Broker WebApp",
+    description: "React TypeScript Car And Real Estate Web App For Listing Cars And Houses For Sale.",
+    tech: ["React", "Vite", "Redux", "API Integration", "React Hook Form", "Ant Design"],
+    type: "Web App",
+    status: "DEPLOYED",
+    link: "https://edblinkxempirelimited.netlify.app"
   },
-  {
-    title: "Dashboard Analytics Platform",
-    description: "React web application with real-time data visualization, built with Vite for optimal performance.",
-    tech: ["React", "Vite", "TypeScript", "Tailwind CSS"],
-    type: "Web",
-    status: "PRODUCTION"
-  },
-  {
-    title: "Cross-Platform Todo App",
-    description: "Unified codebase for both web and mobile platforms using React and React Native architecture.",
-    tech: ["React", "React Native", "JavaScript", "Responsive Design"],
-    type: "Cross-Platform",
-    status: "OPENSOURCE"
-  }
 ];
 
 export const ProjectsSection = () => {
@@ -103,8 +91,9 @@ export const ProjectsSection = () => {
                     variant="outline" 
                     size="sm"
                     className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-mono flex-1 transition-all duration-300 hover:scale-105"
+                    onClick={() => window.open(project.link, "_blank")}
                   >
-                    <span className="text-xs md:text-sm">&gt; LIVE_DEMO</span>
+                    <span className="text-xs md:text-sm">&gt; VIEW_LIVE</span>
                   </Button>
                 </div>
               </CardContent>
